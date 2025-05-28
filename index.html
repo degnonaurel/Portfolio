@@ -3,54 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio de Mohamed Degnon - SEG3525</title>
+  <title>Mohamed Degnon | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { padding-top: 60px; }
-    .project-img { width: 100%; height: 200px; object-fit: cover; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .hero {
+      background: linear-gradient(135deg, #1f2937, #4b5563);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+    .project-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .footer {
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+    }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Portfolio Mohamed Degnon</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mohamed Degnon</a>
   </div>
 </nav>
-<div class="container text-center my-5">
-  <h1>Bonjour, je suis Mohamed Degnon</h1>
-  <p class="lead">Étudiant en 3e année de Génie Informatique à l’Université d’Ottawa. Passionné par les technologies, l'accessibilité et le design intelligent. <br>
-    <a href="https://linkedin.com/in/mohamed-luc-aurel-degnon-3724b6235" target="_blank">Voir mon LinkedIn</a>
-  </p>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
+    <p class="lead">Étudiant en Génie Informatique à l’Université d’Ottawa | Passionné par le design d'IU, l'accessibilité et la technologie.</p>
+    <a href="https://linkedin.com/in/mohamed-luc-aurel-degnon-3724b6235" target="_blank" class="btn btn-outline-light mt-3">Mon LinkedIn</a>
+  </div>
+</section>
+
+<!-- Section À propos -->
+<div class="container">
+  <h2 class="section-title">À propos de moi</h2>
+  <p>Je suis un étudiant de 3e année à l’Université d’Ottawa en Génie Informatique. J’ai un intérêt particulier pour les technologies accessibles, les interfaces centrées utilisateur et le design propre et efficace. J’ai participé à des projets incluant l’IoT, l’analyse de données et la programmation en Python, Java, et SQL.</p>
 </div>
-<div class="container my-5">
-  <h2>Comment je travaille</h2>
-  <p>Je suis actuellement le cours SEG3525 où j'apprends à concevoir des interfaces utilisateur. J'intègre des principes de design enseignés par le <a href="https://www.nngroup.com/" target="_blank">Nielsen Norman Group</a>. Mon approche vise la clarté, l’accessibilité et l’impact utilisateur.</p>
-</div>
-<div class="container my-5">
-  <h2>Projets à venir</h2>
-  <div class="row">
-    <div class="col-md-3">
-      <a href="projet1.html"><img src="img/service.jpg" alt="Design 1" class="project-img rounded shadow-sm"></a>
-      <p class="text-center mt-2">Site de services</p>
+
+<!-- Section Projets -->
+<div class="container">
+  <h2 class="section-title">Projets à venir</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="card project-card">
+        <div class="card-body">
+          <h5 class="card-title">Site de Services</h5>
+          <p class="card-text">Un site vitrine pour un professionnel (ex. coiffeur, dentiste). À venir.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <a href="projet2.html"><img src="img/game.jpg" alt="Design 2" class="project-img rounded shadow-sm"></a>
-      <p class="text-center mt-2">Petit jeu</p>
+    <div class="col-md-6 col-lg-3">
+      <div class="card project-card">
+        <div class="card-body">
+          <h5 class="card-title">Petit Jeu</h5>
+          <p class="card-text">Un jeu interactif en JavaScript. Développement prévu dans le cadre du cours.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <a href="projet3.html"><img src="img/ecommerce.jpg" alt="Design 3" class="project-img rounded shadow-sm"></a>
-      <p class="text-center mt-2">Site e-commerce</p>
+    <div class="col-md-6 col-lg-3">
+      <div class="card project-card">
+        <div class="card-body">
+          <h5 class="card-title">E-commerce</h5>
+          <p class="card-text">Une interface d’achat en ligne avec panier et gestion des produits. À venir.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <a href="projet4.html"><img src="img/data.jpg" alt="Design 4" class="project-img rounded shadow-sm"></a>
-      <p class="text-center mt-2">Site de visualisation</p>
+    <div class="col-md-6 col-lg-3">
+      <div class="card project-card">
+        <div class="card-body">
+          <h5 class="card-title">Visualisation de données</h5>
+          <p class="card-text">Dashboard interactif basé sur des données (finances, sport, etc.). Bientôt disponible.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<footer class="bg-dark text-white text-center p-3">
-  Portfolio de Mohamed Degnon – SEG3525
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Mohamed Degnon – Portfolio</p>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
- 
