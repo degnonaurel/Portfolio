@@ -73,17 +73,6 @@
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
     }
-    .game-badge {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-      color: white;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
     .footer {
       background-color: #212529;
       color: white;
@@ -125,27 +114,34 @@
     }
     .game-preview {
       display: flex;
-      gap: 20px;
+      gap: 15px;
       margin-top: 20px;
       overflow-x: auto;
       padding-bottom: 15px;
     }
     .game-preview img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 10px;
       object-fit: cover;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s;
+      border: 2px solid transparent;
     }
     .game-preview img:hover {
       transform: scale(1.05);
     }
+    .game-preview img.elodie {
+      border-color: #4c51bf;
+    }
+    .game-preview img.samuel {
+      border-color: #ff6b6b;
+    }
     .game-description {
       background: #f0f4f8;
-      padding: 20px;
+      padding: 15px;
       border-radius: 10px;
-      margin-top: 20px;
+      margin-top: 15px;
     }
     .persona-badge {
       display: inline-block;
@@ -164,12 +160,39 @@
       background: linear-gradient(135deg, #ff6b6b, #ff8e53);
       color: white;
     }
+    .game-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .theme-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .theme-elodie {
+      background: #4c51bf;
+      color: white;
+    }
+    .theme-samuel {
+      background: #ff6b6b;
+      color: white;
+    }
     @media (max-width: 768px) {
       .hero {
         padding: 60px 15px;
       }
       .section-title {
         font-size: 1.5rem;
+      }
+      .game-preview img {
+        width: 120px;
+        height: 120px;
       }
     }
   </style>
@@ -255,10 +278,18 @@
     <!-- Memory Challenge -->
     <div class="col-md-6 col-lg-4">
       <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Memory Challenge">
-        <span class="game-badge">Nouveau!</span>
+        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Memory Challenge">
         <div class="card-body">
-          <h5 class="card-title">Memory Challenge</h5>
+          <div class="game-header">
+            <div class="theme-icon theme-elodie">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="theme-icon theme-samuel">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h5 class="card-title mb-0">Memory Challenge</h5>
+          </div>
+          
           <p class="card-text">Jeu de mémoire conçu pour tester la mémoire visuelle avec deux expériences distinctes.</p>
           
           <div class="game-description">
@@ -277,9 +308,17 @@
           </div>
           
           <div class="game-preview">
-            
-            <img src="https://images.unsplash.com/photo-1583512603806-077998240c7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mode Fun">
-            <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Gameplay">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 alt="Mode Étude" 
+                 class="elodie"
+                 title="Mode Étude - Interface épurée">
+            <img src="https://images.unsplash.com/photo-1583512603806-077998240c7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 alt="Mode Fun" 
+                 class="samuel"
+                 title="Mode Fun - Interface ludique">
+            <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                 alt="Gameplay" 
+                 title="Exemple de partie en cours">
           </div>
         </div>
       </div>
