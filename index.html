@@ -325,21 +325,46 @@
     </div>
     
     <!-- E-commerce -->
-    <div class="col-md-6 col-lg-4">
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="E-commerce">
-        <div class="card-body">
-          <h5 class="card-title">AutociExpress</h5>
-          <p class="card-text">Interface d'achat de voiture en ligne depuis le Canada pour la cote d'Ivoire.</p>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <a href=https://degnonaurel.github.io/autoci/>
-              <i class="fas fa-hourglass-half me-2"></i>En développement
-            </a>
-            <span class="badge bg-success">React</span>
-          </div>
+    <div class="col-md-6 col-lg-4 mb-4">
+  <div class="project-card h-100 shadow-lg rounded-3 overflow-hidden">
+    <!-- Image de voiture premium -->
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+         class="card-img-top object-fit-cover" 
+         alt="AutoCI Express" 
+         style="height: 200px; object-fit: cover;">
+
+    <div class="card-body bg-white p-4">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <h5 class="card-title fw-bold mb-1">AutoCI Express</h5>
+          <p class="text-muted mb-3">Plateforme d'import automobile Canada → Côte d'Ivoire</p>
+        </div>
+        <span class="badge bg-success ms-2 align-self-start">React</span>
+      </div>
+      
+      <p class="card-text mb-4">Solution complète d'achat et d'import de véhicules depuis le Canada pour le marché ivoirien avec suivi personnalisé.</p>
+      
+      <div class="d-flex justify-content-between align-items-center mt-auto">
+        <a href="https://degnonaurel.github.io/autoci/" 
+           class="btn btn-outline-primary btn-sm d-flex align-items-center">
+          <i class="fas fa-external-link-alt me-2"></i>Voir le projet
+        </a>
+        <div class="d-flex">
+          <span class="badge bg-light text-dark me-1">React Router</span>
+          <span class="badge bg-light text-dark">Tailwind CSS</span>
         </div>
       </div>
     </div>
+    
+    <!-- Badge de statut en bas de carte -->
+    <div class="card-footer bg-light py-2 border-0">
+      <div class="d-flex align-items-center text-warning">
+        <i class="fas fa-hourglass-half me-2"></i>
+        <small>En développement actif</small>
+      </div>
+    </div>
+  </div>
+</div>
     
     <!-- Visualisation de données -->
     <div class="col-md-6 col-lg-4">
