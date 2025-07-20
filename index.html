@@ -373,24 +373,28 @@
     <div class="card-body">
       <h5 class="card-title">Visualisation de données</h5>
       <p class="card-text">
-        Tableau de bord interactif et bilingue pour visualiser les données d’exportation de voitures du Canada vers la Côte d’Ivoire. 
-        L’interface comprend deux graphiques dynamiques, des filtres interactifs, et l’internationalisation complète (FR/EN).
+        Tableau de bord interactif et bilingue pour l’analyse des exportations de voitures du Canada vers la Côte d’Ivoire.
+        Deux graphiques dynamiques, filtres interactifs, et interface internationale (FR/EN).
       </p>
-      <div class="d-flex justify-content-between align-items-center mt-3">
-        <a href="https://degnonaurel.github.io/DashboardAutoci/" target="_blank" class="btn btn-primary">
-          <i class="fas fa-chart-line me-2"></i>Voir le projet
+      
+      <div class="d-flex flex-column gap-2 mt-3">
+        <!-- Lien vers le projet -->
+        <a href="https://degnonaurel.github.io/DashboardAutoci/" target="_blank" class="btn btn-outline-primary">
+          <i class="fas fa-chart-line me-2"></i>Voir le tableau de bord
         </a>
-        <span class="badge bg-primary">React • i18n • Recharts</span>
+
+        <!-- Bouton de téléchargement du CSV -->
+        <a href="assets/data/export_voitures_12mois_10marques.csv" download class="btn btn-outline-secondary">
+          <i class="fas fa-file-csv me-2"></i>Télécharger les données (CSV)
+        </a>
       </div>
 
-      <a href="https://github.com/degnonaurel/Portfolio/raw/6bf2c5f7da5e49f20375beb53642a1a0853bc96b/export_voitures_12mois_10marques.csv" 
-   download 
-   class="btn btn-sm btn-outline-secondary">
-   <i class="fas fa-file-csv me-1"></i>Télécharger le CSV
-</a>
-<p class="mt-2 small text-muted">
-  Fichier source utilisé pour la visualisation : données d’exportation de voitures (10 marques, 12 mois).
-</p>
+      <!-- Tech badge -->
+      <span class="badge bg-primary mt-3">React + D3.js</span>
+    </div>
+  </div>
+</div>
+
 
 
     
